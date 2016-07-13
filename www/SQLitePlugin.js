@@ -841,7 +841,7 @@ Contact for commercial license: info@litehelpers.net
       }
       delete SQLitePlugin.prototype.openDBs[args.path];
       return cordova.exec(success, error, "SQLitePlugin", "close", [args]);
-    }
+    },
     deleteDatabase: function(first, success, error) {
       var args, dbname;
       args = {};
